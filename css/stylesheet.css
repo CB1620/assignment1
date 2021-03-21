@@ -1,0 +1,69 @@
+body{
+    background-color: #191724;
+    color: #f6c177;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 2fr);
+}
+
+.header{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.sidebar{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #6e6a86;
+}
+
+.mynotes{
+    text-align: center;
+}
+
+div ul{
+    grid-column: 8;
+    grid-row: 2;
+    list-style-type: none;
+    text-align: center;
+}
+
+.about{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.notes{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    list-style-type: square;
+}
+
+.newnote{
+    display:grid;
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #e0def4;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
