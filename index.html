@@ -5,18 +5,28 @@
     <head>
         <title>Personal Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <body>
 
         <div class="maingrid">
-            <h1 class="header">Take Better Notes</h1>
-            <ul class="about">
-                <li>About</li>
-                <li>Docs</li>
-            </ul>
+            <header>
+                <nav>
+                    <ul class="about">
+                        <li>About</li>
+                        <li>Docs</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <h1 class="head1">Take Better Notes</h1>
+            <!-- note for neda, for some reason the css wasn't applying any of the rules I applied to this H1 when it was
+            inside the header class. I moved it out by itself, and the rules started working again. I know this was one
+            of your errors you told me to fix, but for some reason it just wont work. Sorry :( -->
+
+
             <button class="newnote">New Note</button>
             <button class="dark">Dark Theme</button>
             <button class="save">Save</button>
@@ -30,10 +40,10 @@
 
             <div class="container">
             <a class="linked" href="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png">
-                <img src="../images/linked.png" alt="LinkedIn" width="75" height="75">
+                <img src="images/linked.png" alt="LinkedIn" width="75" height="75">
                 </a>
             <a class="mouse" href="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png">
-                <img src="../images/mouse.png" alt="Thing" width="75" height="75">
+                <img src="images/mouse.png" alt="Thing" width="75" height="75">
                 </a>
             </div>
         </div>

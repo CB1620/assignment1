@@ -13,7 +13,9 @@ body{
     grid-template-rows: repeat(10, 2fr);
 }
 
-.header{
+
+.head1{
+    display: grid;
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row: 1;
@@ -33,16 +35,14 @@ body{
     text-align: center;
 }
 
-div ul{
+header{
     grid-column: 8;
     grid-row: 2;
-    list-style-type: none;
-    text-align: center;
 }
 
-.about{
-    list-style-type: none;
+.about li{
     display: inline-block;
+    list-style-type: none;
     padding: 10px;
 }
 
