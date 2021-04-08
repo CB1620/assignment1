@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body{
     background-color: #191724;
     color: #f6c177;
@@ -11,6 +16,7 @@ body{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 2fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
 }
 
 
@@ -53,55 +59,41 @@ header{
     list-style-type: square;
 }
 
-.newnote{
-    grid-column: 1;
-    grid-row: 3;
+button{
     background-color: #e0def4;
     text-align: center;
     font-size: 14px;
-    width: 100px;
-    height: 40px;
     border-radius: 25px;
     margin: 10px;
+}
+
+.newnote{
+    grid-column: 2;
+    grid-row: 3;
+    width: 100px;
+    height: 40px;
 }
 
 .dark{
     grid-column: 8;
     grid-row: 3;
-    background-color: #e0def4;
-    text-align: center;
-    font-size: 14px;
     width: 100px;
     height: 40px;
-    border-radius: 25px;
-    margin: 10px;
 }
 
 .save{
     grid-column: 8;
     grid-row: 6;
-    background-color: #e0def4;
-    text-align: center;
-    font-size: 14px;
     width: 60px;
     height: 40px;
-    border-radius: 25px;
-    margin: 10px;
 }
 
 .cancel{
-    grid-column: 8;
     grid-row: 6;
-    position: absolute;
-    right: 10px;
-    top: 508px;
-    background-color: #e0def4;
-    text-align: center;
-    font-size: 14px;
+    grid-column: 8;
     width: 80px;
     height: 40px;
-    border-radius: 25px;
-    margin: 10px;
+    justify-self: right;
 }
 
 .head2{
@@ -111,7 +103,7 @@ header{
     justify-self: center;
 }
 
-.container{
+footer{
     display: flex;
     grid-column-start: 4;
     grid-column-end: 6;
@@ -140,3 +132,9 @@ label {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width:600px) {
+    footer {
+        grid-column: span 1 / 8;
+    }
+
+  }
