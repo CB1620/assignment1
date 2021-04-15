@@ -140,6 +140,10 @@ label {
     visibility: hidden;
 }
 
+.reappear{
+    visibility: visible;
+}
+
 @media screen and (max-width:600px) {
     footer {
         grid-column: span 1 / 8;
