@@ -5,7 +5,7 @@
 //         buttons change to dark color
 
 const theme = document.querySelectorAll("#noteBtn, #cancelBtn, #darkBtn, #saveBtn, #textarea, #sideBar")
-const btn = document.querySelector("#darkBtn")
+const cancel = document.querySelectorAll("#cancelBtn, #saveBtn, #textarea")
 
 function toggle()
 {
@@ -15,7 +15,7 @@ function toggle()
     
 };
 
-function myFunction() {
+function changeText() {
     var x = document.getElementById("darkBtn");
     if (x.innerHTML === "Light Theme") {
       x.innerHTML = "Dark Theme";
@@ -24,7 +24,17 @@ function myFunction() {
     }
   }
 
+  function remove()
+  {
+      for (let id of cancel){
+          id.classList.toggle("removed");
+      };
+      
+  };
+
+
 darkBtn.addEventListener("click", toggle);
+cancelBtn.addEventListener("click", remove);
 
 
 

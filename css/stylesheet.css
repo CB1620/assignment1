@@ -136,6 +136,9 @@ label {
     background-color: white;
 }
 
+.removed{
+    visibility: hidden;
+}
 
 @media screen and (max-width:600px) {
     footer {
