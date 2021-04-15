@@ -132,9 +132,15 @@ label {
     margin-bottom: 10px;
 }
 
+.changed{
+    background-color: white;
+}
+
+
 @media screen and (max-width:600px) {
     footer {
         grid-column: span 1 / 8;
     }
 
   }
+
